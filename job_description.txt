@@ -1,0 +1,13 @@
+AI/ML Engineer
+
+Requirements:
+- Python
+- SQL
+- Machine Learning
+- Deep Learning
+- TensorFlow
+- Data Analytics
+- Streamlit
+- Git
+- Problem Solving
+- Communication Skills
