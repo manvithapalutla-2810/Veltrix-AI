@@ -1,5 +1,34 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+
+# Environment files
 .env
 config.py
+
+# Streamlit Secrets
 .streamlit/secrets.toml
+
+# Uploaded resumes
+uploads/*
+!uploads/.gitkeep
+
+# Sample resumes
+resumes/*
+!resumes/.gitkeep
+
+# Generated PDF reports
+*_Report.pdf
+
+# Generated CSV files
+data/candidate_rankings.csv
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
