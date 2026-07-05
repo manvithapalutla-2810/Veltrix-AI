@@ -34,7 +34,7 @@ st.markdown("---")
 if st.button("📨 Send Email"):
 
     sender_email = st.secrets["EMAIL"]
-sender_password = st.secrets["APP_PASSWORD"]
+    sender_password = st.secrets["APP_PASSWORD"]
 
     if email_type == "Interview Invitation":
 
