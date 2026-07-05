@@ -1,9 +1,15 @@
 from google import genai
 import streamlit as st
 
-client = genai.Client(
-    api_key=st.secrets["API_KEY"]
-)
+# Use Streamlit Secrets when deployed, otherwise use local config.py
+try:
+    api_key = st.secrets["API_KEY"]
+except Exception:
+    import config
+    api_key = config.API_KEY
+
+client = genai.Client(api_key=api_key)
+
 
 def analyze_resume(resume_text):
 
