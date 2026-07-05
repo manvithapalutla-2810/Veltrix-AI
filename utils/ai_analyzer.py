@@ -1,8 +1,9 @@
 from google import genai
-import config
+import streamlit as st
 
-client = genai.Client(api_key=config.API_KEY)
-
+client = genai.Client(
+    api_key=st.secrets["API_KEY"]
+)
 
 def analyze_resume(resume_text):
 
